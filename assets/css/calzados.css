@@ -1,0 +1,26 @@
+body{
+    background-color: #eee;
+}
+h1{
+    font-family: 'Cedarville Cursive', cursive;
+    font-stretch: normal;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.product-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    align-content: flex-start;
+
+}
+.product-box__items{
+    background-color: indigo;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    text-align: center;
+    color: white;
+}
