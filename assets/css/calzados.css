@@ -3,13 +3,14 @@ body{
 }
 
 .container{
-    background-color: #444;
+    background-color: white;
     display: grid;
     grid-template-areas: 
     "header header header"
     "aside main main"
     "aside main main"
     "footer footer footer";
+    margin: 10px;
 }
 .footer{
     background-color: #6f9;
@@ -19,11 +20,7 @@ body{
     background-color: #f96;
     grid-area: header;
 }
-.aside{
-    background-color: #888;
-    grid-area: aside;
-    min-width: 300px;
-}
+
 
 .product-box{
     width: 100%;
@@ -33,7 +30,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     align-content: flex-start;
     
 }
@@ -48,9 +45,23 @@ body{
 .product-box__items{
     
     background-color: indigo;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 400px;
     margin: 5px;
     text-align: center;
     color: white;
+}
+.categorias-aside{
+    background-color: #888;
+    grid-area: aside;
+    min-width: 300px;
+}
+
+.categorias-aside__title h2{
+    font-family: 'Cedarville Cursive', cursive;
+    text-align: center;
+}
+
+.categorias-aside__opciones li{
+    font-family: 'Cedarville Cursive', cursive;
 }
