@@ -1,22 +1,52 @@
 body{
     background-color: #eee;
 }
-h1{
-    font-family: 'Cedarville Cursive', cursive;
-    font-stretch: normal;
-    font-size: 60px;
-    line-height: 60px;
-    text-align: center;
+
+.container{
+    background-color: #444;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "aside main main"
+    "footer footer footer";
 }
+.footer{
+    background-color: #6f9;
+    grid-area: footer;
+}
+.header{
+    background-color: #f96;
+    grid-area: header;
+}
+.aside{
+    background-color: #888;
+    grid-area: aside;
+    min-width: 300px;
+}
+
 .product-box{
+    width: 100%;
+    margin: auto;
+    grid-area: main;
+    background-color: blue;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     height: 100vh;
     align-content: flex-start;
-
+    
+}
+.product-box__title{
+    min-width: 100%;
+    font-family: 'Cedarville Cursive', cursive;
+    font-stretch: normal;
+    font-size: 45px;
+    line-height: 45px;
+    text-align: center;
 }
 .product-box__items{
+    
     background-color: indigo;
     width: 200px;
     height: 200px;
