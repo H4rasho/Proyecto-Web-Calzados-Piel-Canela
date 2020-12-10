@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
 
-/*
-	Big Picture by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -1833,9 +1828,10 @@ input, select, textarea {
 		top: 0;
 		width: 100%;
 		background: rgba(255, 255, 255, 0.95);
-		height: 3.9em;
+		height: 4.8em;
 		line-height: 3em;
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+		
 	}
 
 		#header h1 {
@@ -1850,9 +1846,14 @@ input, select, textarea {
 		#header .logo{
 			position: absolute;
 			left: 0.7em;
-			margin-top: 0.4em;
-			margin-bottom: 1.3em;
+			margin-top: 0.35em;
+			margin-bottom: 0.35em;
 		}
+
+		#header .img:hover{
+			background: none;
+		}
+
 			#header h1 a {
 				font-size: 1.25em;
 			}
@@ -1866,17 +1867,17 @@ input, select, textarea {
 		}
 
 			#header nav ul {
+				
 				margin: 0;
 				margin-top: 0.35em;
+				
 			}
 
 				#header nav ul li {
 					display: inline-block;
+					vertical-align: middle;
 					margin-left: 0.5em;
 					font-size: 0.9em;
-				}
-				#header nav ul li:hover {
-					background-color: rgb(235, 239, 240);
 				}
 
 					#header nav ul li a {
@@ -1888,9 +1889,6 @@ input, select, textarea {
 						padding: 0 0.5em 0 0.5em;
 						outline: 0;
 					}
-				
-
-			
 
 		@media screen and (max-width: 736px) {
 
@@ -1931,7 +1929,7 @@ input, select, textarea {
 		}
 
 
-/* Main */
+/* Main (es la primera clase de cada sección de contenido(menos header, galeria y footer): main style dark fullscreen */
 
 	.main {
 		display: -moz-flex;
@@ -2050,6 +2048,13 @@ input, select, textarea {
 		.main.style3 {
 			text-align: center;
 			padding: 6em 0 6em 0;
+		}
+
+		.main.style3 h1{
+			font-family: 'Cedarville Cursive', cursive;
+			font-stretch: normal;
+			font-size: 60px;
+			line-height: 60px;
 		}
 
 			.main.style3 .content > header {
@@ -2255,11 +2260,80 @@ input, select, textarea {
 
 		}
 
-/* Intro */
+/* Intro (video, capa transparente y mensaje con botón) */
+
+	.headerr{
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		color: #fff;
+		
+	}
+	.contenido{
+		max-width: 49rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		margin: auto;
+		text-align: center;
+		
+	}
+	.header-video{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		z-index: 1;
+		overflow: hidden;
+	}
+	
+	.header-video video{
+		min-width: 100%;
+		min-height: 100%;
+		
+	}
+	.header-colorfondo{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #000000cf;
+		z-index: 2;
+		opacity: .85;
+		
+	}
+	.header-mensaje{
+		z-index: 3;
+	}
+
+	.header-mensaje h1{
+		font-size: 70px;
+		font-stretch: normal;
+		line-height: 60px;
+		margin-bottom: 0;
+		font-family: 'Cedarville Cursive', cursive;
+	}
+
+	.header-mensaje p{
+		font-size: 1.5rem;
+		display: block;
+		padding-bottom: 2rem;		
+	}
+	
+	.btn {
+		background:snow;
+		color: black;
+		font-size: 1.2rem;
+		padding: 1rem 2rem;
+		text-decoration: none;
+
+	}
+
 
 	#intro {
 		margin-top: 1em;
-		background: url("images/overlay.png"), url("../../images/sliderDENIMFUSION.jpg");
+		background: url("images/overlay.png");
 		background-size: 1080px 1920px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -2268,21 +2342,71 @@ input, select, textarea {
 
 /* One */
 
+.t-slider {
+	margin-bottom: 1em;
+	color: black;
+	text-align: center;
+	font-family: 'Cedarville Cursive', cursive;
+	font-size: 60px;
+	font-stretch: normal;
+	line-height: 60px;
+	margin-bottom: 0;
+}
+
+.slider {
+	width: 100%;
+	margin:	auto;
+	overflow: hidden;
+}
+
+.slider ul{
+	display: flex;
+	padding: 0;
+	width: 400%;
+
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+
+.slider img{
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% { margin-left: 0; }
+	20% {margin-left: 0; }
+
+	45% { margin-left: -100% }
+	25% { margin-left: -100%; }
+
+	50% { margin-left: -200%; }
+	70% { margin-left: -200%; }
+
+	75% { margin-left: -300%; }
+	100% { margin-left: -300%; }
+}
+
+/*
 	#one {
-		background: url("images/overlay.png"), url("../../images/SLIDER-isi.jpg");
+		background: url("images/overlay.png");
 		background-size: 1080px 1920px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
+*/
+/* Two 
 
-/* Two */
-
-	#two {
-		background: url("images/overlay.png"), url("../../images/slider-1.jpg");
-		background-size: 1080px 1920px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
-	}
+#two {
+	background: url("images/overlay.png"), url("../../images/slider-1.jpg");
+	background-size: 1080px 1920px, cover;
+	background-attachment: fixed, fixed;
+	background-position: top left, center center;
+}
+*/
 
 /* Contact */
 
