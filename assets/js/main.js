@@ -216,7 +216,25 @@
 				$window.trigger('resize');
 			});
 
+
+
 	//Buscador
+	//Ejecutar funciones
+
+	document.getElementById("icon-search").addEventListener("click", mostrar_buscador);
+
+	//Declarar Variables
+	bars_search = document.getElementById("ctn-bars-search");
+	cover_ctn_search = document.getElementById("cover-ctn-search");
+	inputSearch = document.getElementById("inputSearch");
+	box_search = document.getElementById("box-search");
+
+	//Funcion para mostrar el buscador
+
+	function mostrar_buscador(){
+		bars_search.style.top = "80px";
+	}
+
 	/*
 	function buscador(){
 
