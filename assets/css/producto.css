@@ -7,8 +7,8 @@ body{
     display: grid;
     grid-template-areas: 
     "header header header"
-    "main main aside"
-    "main main aside"
+    "main main main"
+    "main main main"
     "footer footer footer";
 }
 
@@ -27,27 +27,23 @@ body{
  
 }
 
-.product-info-aside {
-    background-color: blue;
-    grid-area: aside;
-    margin-bottom: 10px;
-    
-}
-
 .product-box{
     grid-area: main;
-    display: flex;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 227px 227px 227px 227px;
+    grid-template-rows: 200px 200px 200px 200px;
+    width: 1200px;
+    height: 1000px;
+    margin: auto;
 }
-.product-box__img{
-    width: 458px;
-    height: 458px;
-    margin-left: 100px;
+
+.product-box__items{
+    border: 1px solid #000
 }
-.product-box__info{
-    width: 400px;
-    height: 300px;
-    margin-left: 140px;
-    font-family: 'Cedarville Cursive', cursive;
+
+.product-box__items:first-child{
+    background-color: #900;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
 }
