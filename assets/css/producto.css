@@ -149,7 +149,6 @@ body {
 		}
 
 	}
-
 /* Type */
 
 	body, input, textarea, select {
@@ -325,7 +324,6 @@ body {
     display: flex;
     margin-top: 10px;
 }
-
 .product-box__relacionados-imgs div{
     width: 300px;
     height: 300px;
