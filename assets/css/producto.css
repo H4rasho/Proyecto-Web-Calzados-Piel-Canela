@@ -276,6 +276,9 @@ body {
     background-size: 450px 450px;
     background-repeat: no-repeat;
 }
+.product-box__img:hover{
+    background-size: 180%;
+}
 
 
 .product-box__info{
