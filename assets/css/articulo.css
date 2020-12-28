@@ -135,7 +135,8 @@ body {
 }
 .comentario{
     width: 100%;
-    border: 2px solid rgba(24, 47, 95, 0.8)
+    border: 2px solid rgba(24, 47, 95, 0.8);
+    padding: 10px;
 }
 .comentario *{
     margin-top: 5px;
