@@ -43,7 +43,7 @@ body {
 		font-weight: 300;
 		font-size: 18pt;
 		line-height: 1.75em;
-		color: #39454b;
+		color: black;
 		letter-spacing: 0.025em;
 	}
 
@@ -142,7 +142,7 @@ body {
     margin-bottom: 10px;
     margin-left: 10px;
     height: 150px;
- 
+
 }
 
 .product-box{
@@ -452,8 +452,8 @@ body {
     margin: 0;
     line-height: 1em;
     padding: 1.5em;
-    background: #39454b;
-    color: rgba(185, 186, 187, 0.5);
+    background: blanchedalmond;
+    color: black;
     overflow: hidden;
 }
 
@@ -474,45 +474,6 @@ body {
     }
 
         #footer ul.menu li {
-            border-left-color: rgba(185, 186, 187, 0.2);
+            border-left-color: black;
             font-size: 0.9em;
         }
-
-    @media screen and (max-width: 1000px) {
-
-        #footer {
-            -moz-flex-direction: column;
-            -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            -moz-justify-content: center;
-            -webkit-justify-content: center;
-            -ms-justify-content: center;
-            justify-content: center;
-            line-height: 1.5em;
-            text-align: center;
-            padding: 2em 1em 2em 1em;
-        }
-
-            #footer > * {
-                margin: 0 0 1em 0;
-            }
-
-    }
-
-    @media screen and (max-width: 736px) {
-
-        #footer ul.menu li {
-            border-left: none;
-            display: block;
-            line-height: inherit;
-            margin: 0.25em 0 0 0;
-            padding: 0.25em 0 0 0;
-        }
-
-            #footer ul.menu li:first-child {
-                margin-top: 0;
-                padding-top: 0;
-            }
-
-    }

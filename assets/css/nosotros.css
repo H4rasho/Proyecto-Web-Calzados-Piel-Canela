@@ -865,9 +865,9 @@ ol, ul {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: #000000cf;
+	background-color: blanchedalmond;
 	z-index: 2;
-	opacity: .85;
+	opacity: .65;
 	
 }
 .header-mensaje{
@@ -895,32 +895,88 @@ ol, ul {
 		padding: 1rem 2rem;
 		text-decoration: none;
 
-	}
+    }
+    
+
+/* Texto Nosotros*/
+
+.texto1{
+    max-width: 69rem;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+	margin: auto;
+	text-align: center;}
+
+.texto2{
+    max-width: 49rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin: auto;
+    text-align: center;
+}
 
 /* One - Slider */
+.slider-contenido{
+	max-width: 49rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+/* .slider{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 1;
+	overflow: hidden;
+} */
 
 .t-slider {
-	margin-bottom: 1em;
+	margin-bottom: -0.3em;
 	margin-top: 0;
 	color: black;
 	text-align: center;
 	font-family: 'Cedarville Cursive', cursive;
 	font-size: 60px;
 	font-stretch: normal;
-	line-height: 60px;
+    line-height: 60px;
+    z-index: 10;
 }
-	.t-slider h1{
-		font-size: 70px;
-		font-stretch: normal;
-		line-height: 60px;
-		margin-bottom: 0;
-		font-family: 'Cedarville Cursive', cursive;
-	}
+
+    .colorfondo{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #000000cf;
+        z-index: 2;
+        opacity: .85;
+        
+    }
+    
+        .t-slider h1{
+            font-size: 70px;
+            font-stretch: normal;
+            line-height: 60px;
+            margin-bottom: 0;
+            font-family: 'Cedarville Cursive', cursive;
+        }
+    
+        .t-slider p{
+            font-size: 1.5rem;
+            display: block;
+            padding-bottom: 2rem;		
+        }
 
 .slider {
 	width: 100%;
 	margin:	auto;
-	overflow: hidden;
+    overflow: hidden;
 }
 
 	.slider ul{
