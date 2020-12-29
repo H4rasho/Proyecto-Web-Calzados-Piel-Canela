@@ -36,3 +36,6 @@
     border-radius: 3px;
     cursor: pointer;
 }
+.flex-box__article-info input:hover{
+    background-color: rgba(245, 245, 245, 0.3);
+}

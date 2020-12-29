@@ -14,6 +14,7 @@
 .comentario{
     width: 100%;
     border: 3px solid blanchedalmond;
+    border-radius: 10px;
     padding: 10px;
 }
 .comentario *{
@@ -40,4 +41,6 @@
     cursor: pointer;
     margin-bottom: 50px;
 }
-
+.comentario-boton input:hover{
+    background-color: rgba(245, 245, 245, 0.3);
+}
