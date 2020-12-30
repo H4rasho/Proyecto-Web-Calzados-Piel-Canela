@@ -186,10 +186,13 @@ body {
 }
 .product-box__info-pedido input{
     padding: 10px;
-    background-color: rgba(24, 47, 95, 0.933);
-    color: #fff;
+    background-color: blanchedalmond;
+    color: #000;
     border-radius: 3px;
     cursor: pointer;
+}
+.product-box__info-pedido input:hover{
+    background-color: rgba(245, 245, 245, 0.3);
 }
 .product-box__otras-img{
     grid-column: 1 / 3;

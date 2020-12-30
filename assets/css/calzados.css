@@ -87,11 +87,12 @@ body {
 	}
 
 	a {
+		text-decoration: none;
 		-moz-transition: color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
-		color: #98c593;
+
 	}
 
 	p, ul, ol, dl, table {
@@ -131,29 +132,36 @@ body {
     
 }
 .product-box__title{
+	font-family: 'Cedarville Cursive', cursive;
+    margin-bottom: 0;
+    font-size: 50px;
 	min-width: 100%;
 	margin-top: 80px;
-    font-family: 'Cedarville Cursive', cursive;
     font-stretch: normal;
-    font-size: 30px;
     line-height: 30px;
     text-align: center;
 }
 .product-box__items{
 
     width: 300px;
-    height: 400px;
+   	min-height: 400px;
     margin-top: 80px;
     text-align: center;
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 3px;
 
 }
+#product-box__items-img1{
+	position: absolute;
+}
+#product-box__items-img1:hover{
+	display: none;
+}
 .categorias-aside{
     grid-area: aside;
-    min-width: 300px;
+    min-width: 350px;
     margin-right: 10px;
-    margin-left: 100px;
+    margin-left: 80px;
     margin-top: 110px;
     border: 2px solid rgba(0, 0, 0, 0.2);
     
@@ -162,17 +170,19 @@ body {
 .categorias-aside__title h2,
     .lineatrabajo-aside__title h2,
     .filtroprecio-aside__title{
-    font-family: 'Cedarville Cursive', cursive;
     text-align: center;
 }
 
 .categorias-aside__opciones li ,
     .lineatrabajo-aside__opciones li{
-    font-family: 'Cedarville Cursive', cursive;
+	color: #000;
     cursor: pointer;
     padding: 4px;
     margin-left: 10px;
 
+}
+.categorias-aside__opciones ul li:hover, .lineatrabajo-aside__opciones li:hover{
+	color: rgba(0, 0, 0, 0.3);
 }
 
 /* Icon */
@@ -377,7 +387,8 @@ body {
     padding: 1.5em;
     background: blanchedalmond;
     color: black;
-    overflow: hidden;
+	overflow: hidden;
+	margin-top:100px;
 }
 
 	#footer > * {
